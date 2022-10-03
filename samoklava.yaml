@@ -196,12 +196,6 @@ outlines:
           - ref: matrix_inner_top
             shift: [-0.5 kx, -0.02 ky]
         radius: 1.05
-      palm:
-        type: circle
-        anchor:
-          - ref: matrix_index_bottom
-            shift: [0.06 kx, -1.2 ky]
-        radius: 1.05
       thumb:
         type: circle
         anchor:
@@ -215,8 +209,6 @@ outlines:
       bottom_left:
         radius: 2.05
       top_right:
-        radius: 2.05
-      palm:
         radius: 2.05
       thumb:
         radius: 2.05
