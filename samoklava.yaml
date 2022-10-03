@@ -182,31 +182,31 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_ring_home
-            shift: [-0.5 kx, 0 ky]
+            shift: [-0.5 kx, -0.02 ky]
         radius: 1.05
       bottom_left:
         type: circle
         anchor:
           - ref: matrix_pinky_bottom
-            shift: [0.5 kx, 0]
+            shift: [0.5 kx, -0.02 ky]
         radius: 1.05
       top_right:
         type: circle
         anchor:
           - ref: matrix_inner_top
-            shift: [-0.5 kx, 0]
+            shift: [-0.5 kx, -0.02 ky]
         radius: 1.05
       palm:
         type: circle
         anchor:
           - ref: matrix_index_bottom
-            shift: [0, -1.06 ky]
+            shift: [0.06 kx, -1.2 ky]
         radius: 1.05
       thumb:
         type: circle
         anchor:
           - ref: thumbfan_far_thumb
-            shift: [-0.55 kx, 0]
+            shift: [-0.56 kx, -0.02 ky]
         radius: 1.05
     mounting_holes:
       $extends: outlines.exports.screw_holes
@@ -412,4 +412,11 @@ pcbs:
         nets:
           from: GND
           to: RST
+      tenting-puck:
+        type: tentingpuck
+        anchor:
+          ref:
+            - matrix_middle_top
+          shift: [8.1, -26]
+          rotate: 0
 
