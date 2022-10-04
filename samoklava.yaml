@@ -182,19 +182,13 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_ring_home
-            shift: [-0.5 kx, -0.02 ky]
-        radius: 1.05
-      bottom_left:
-        type: circle
-        anchor:
-          - ref: matrix_pinky_bottom
-            shift: [0.5 kx, -0.02 ky]
+            shift: [-0.5 kx, -0.25 ky]
         radius: 1.05
       top_right:
         type: circle
         anchor:
           - ref: matrix_inner_top
-            shift: [-0.5 kx, -0.02 ky]
+            shift: [-0.5 kx, -0.3 ky]
         radius: 1.05
       thumb:
         type: circle
@@ -205,8 +199,6 @@ outlines:
     mounting_holes:
       $extends: outlines.exports.screw_holes
       top_left:
-        radius: 2.05
-      bottom_left:
         radius: 2.05
       top_right:
         radius: 2.05
