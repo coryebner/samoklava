@@ -67,11 +67,11 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2.5 kx, -1 ky]
+        shift: [-2 kx, -1 ky]
       columns:
         near:
           spread: kx
-          rotate: 0
+          rotate: -7
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: P18
