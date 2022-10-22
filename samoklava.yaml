@@ -137,8 +137,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0 kx, -3.5 ky]
-        size: [32, 3.9 ky]
+          shift: [0 kx, -4 ky]
+        size: [32.7, 4.4 ky]
         corner: px
     switches:
       main:
@@ -261,7 +261,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [20, -11]
+          shift: [20.7, -11]
           rotate: 270
       mcu_r:
         type: promicro
@@ -270,14 +270,14 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [22.5, -12.25]
+          shift: [23.2, -12.25]
           rotate: 270
       pad_plus:
         type: pad
         anchor:
           ref:
             - matrix_inner_top
-          shift: [23, -6]
+          shift: [23.7, -6]
           rotate: 0
         params:
           front: true
@@ -292,7 +292,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [23, -3]
+          shift: [23.7, -3]
           rotate: 0
         params:
           front: true
@@ -307,7 +307,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -15]
+          shift: [32.7, -15]
           rotate: 270
         params:
           reverse: false
@@ -323,7 +323,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32, -13]
+          shift: [32.7, -13]
           rotate: 270
         params:
           reverse: true
@@ -339,7 +339,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [23.5, 0]
+          shift: [24.2, 0]
           rotate: 270
         params:
           side: B
@@ -351,7 +351,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [23.5, 0]
+          shift: [24.2, 0]
           rotate: 270
         params:
           side: F
@@ -389,7 +389,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [17, 0]
+          shift: [17.7, 0]
           rotate: 270
         params:
           variant: 2_pin_th
@@ -401,6 +401,6 @@ pcbs:
         anchor:
           ref:
             - matrix_middle_top
-          shift: [9, -26]
+          shift: [27, -26]
           rotate: 0
 
