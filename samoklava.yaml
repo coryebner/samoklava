@@ -38,12 +38,12 @@ points:
           key:
             column_net: P20
         ring:
-          stagger: 0.7 ky
+          stagger: 0.8 ky
           spread: kx
           key:
             column_net: P19
         middle:
-          stagger: 0.4 ky
+          stagger: 0.3 ky
           spread: kx
           key:
             column_net: P18
@@ -53,7 +53,7 @@ points:
           key:
             column_net: P15
         inner:
-          stagger: -0.1 ky
+          stagger: -0.2 ky
           spread: kx
           key:
             column_net: P14
@@ -397,10 +397,10 @@ pcbs:
           from: GND
           to: RST
       tenting-puck:
-        type: tentingpuck
+        type: tentingpuck_ns
         anchor:
           ref:
             - matrix_middle_top
-          shift: [27, -26]
+          shift: [27, -27.6]
           rotate: 0
 
