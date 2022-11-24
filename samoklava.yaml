@@ -38,7 +38,7 @@ points:
           key:
             column_net: P20
         ring:
-          stagger: 0.7 ky
+          stagger: 0.8 ky
           spread: kx
           key:
             column_net: P19
@@ -48,12 +48,12 @@ points:
           key:
             column_net: P18
         index:
-          stagger: -0.3 ky
+          stagger: -0.4 ky
           spread: kx
           key:
             column_net: P15
         inner:
-          stagger: -0.1 ky
+          stagger: -0.2 ky
           spread: kx
           key:
             column_net: P14
@@ -71,7 +71,7 @@ points:
       columns:
         near:
           spread: kx
-          rotate: -7
+          rotate: 0
           origin: [-0.5 kx, -0.5 ky]
           key:
             column_net: P18
@@ -137,8 +137,8 @@ outlines:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [0 kx, -4 ky]
-        size: [32.7, 4.4 ky]
+          shift: [0 kx, -3.56 ky]
+        size: [33.3, 3.96 ky]
         corner: px
     switches:
       main:
@@ -177,13 +177,6 @@ outlines:
         type: outline
         name: controller_area
         operation: add
-    screw_holes:
-      top_left:
-        type: circle
-        anchor:
-          - ref: matrix_ring_home
-            shift: [-0.5 kx, -0.25 ky]
-        radius: 1.05
       top_right:
         type: circle
         anchor:
@@ -196,23 +189,10 @@ outlines:
           - ref: thumbfan_far_thumb
             shift: [-0.56 kx, -0.02 ky]
         radius: 1.05
-    mounting_holes:
-      $extends: outlines.exports.screw_holes
-      top_left:
-        radius: 2.05
-      top_right:
-        radius: 2.05
-      thumb:
-        radius: 2.05
     bottom_outline:
       main:
         type: outline
         name: base_outline
-      screw_holes:
-        type: outline
-        # TODO use footprints with pad + via reinforcement as mounting holes
-        name: screw_holes
-        operation: subtract
     plate:
       main:
         type: outline
@@ -221,20 +201,10 @@ outlines:
         type: outline
         name: switches
         operation: subtract
-      mounting_holes:
-        type: outline
-        # TODO use footprints with pad + via reinforcement as mounting holes
-        name: screw_holes
-        operation: subtract
     pcb:
       main:
         type: outline
         name: base_outline
-      mounting_holes:
-        type: outline
-        # TODO use plated through hole footprints as mounting holes
-        name: mounting_holes
-        operation: subtract
 pcbs:
   top_plate:
     include_keys: false
@@ -261,7 +231,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [20.7, -11]
+          shift: [21.3, -11]
           rotate: 270
       mcu_r:
         type: promicro
@@ -270,14 +240,14 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [23.2, -12.25]
+          shift: [23.8, -12.25]
           rotate: 270
       pad_plus:
         type: pad
         anchor:
           ref:
             - matrix_inner_top
-          shift: [23.7, -6]
+          shift: [24.3, -6]
           rotate: 0
         params:
           front: true
@@ -292,7 +262,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_top
-          shift: [23.7, -3]
+          shift: [24.3, -3]
           rotate: 0
         params:
           front: true
@@ -307,7 +277,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32.7, -15]
+          shift: [33.3, -15]
           rotate: 270
         params:
           reverse: false
@@ -323,7 +293,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [32.7, -13]
+          shift: [33.3, -13]
           rotate: 270
         params:
           reverse: true
@@ -339,7 +309,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [24.2, 0]
+          shift: [24.8, 0]
           rotate: 270
         params:
           side: B
@@ -351,7 +321,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [24.2, 0]
+          shift: [24.8, 0]
           rotate: 270
         params:
           side: F
@@ -363,7 +333,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [30, 0]
+          shift: [30.6, 0]
           rotate: 270
         params:
           side: F
@@ -376,7 +346,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [30, 0]
+          shift: [30.6, 0]
           rotate: 270
         params:
           side: B
@@ -389,7 +359,7 @@ pcbs:
         anchor:
           ref:
             - matrix_inner_bottom
-          shift: [17.7, 0]
+          shift: [18.3, 0]
           rotate: 270
         params:
           variant: 2_pin_th
@@ -397,10 +367,10 @@ pcbs:
           from: GND
           to: RST
       tenting-puck:
-        type: tentingpuck
+        type: tentingpuck_ns
         anchor:
           ref:
             - matrix_middle_top
-          shift: [27, -26]
+          shift: [26.9, -29.5]
           rotate: 0
 
